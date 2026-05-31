@@ -1,0 +1,826 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+.mainnavbar{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #fff;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+.logosize{
+    width: 150px;
+    height: auto;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.searchtag{
+    width: 350px;
+    max-width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+}
+
+.searchtag:focus{
+    border-color: #d63384;
+    box-shadow: 0 0 5px rgba(214, 51, 132, 0.4);
+    /* outline: none; */
+}
+.promotionpage{
+    position: relative;
+}
+
+.image2{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    display: block;
+    margin: 10px;
+}
+
+.promotext{
+    color: lightcyan;
+    position: absolute;
+    top: 250px;
+    left: 60px;
+}
+
+.promotext h1{
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+.promotext1,
+.promotext2,
+.promotext3,
+.promotext4{
+    position: absolute;
+    padding: 15px 35px;
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255,255,255,0.1);
+    transition: 0.3s ease;
+}
+
+.promotext1{
+    color: lightgrey;
+    top: 500px;
+    left: 60px;
+    border: 3px solid white;
+}
+
+.promotext2{
+    color: lightgrey;
+    top: 500px;
+    left: 320px;
+    border: 3px solid lightcyan;
+}
+
+.promotext3{
+    color: lightcyan;
+    top: 620px;
+    left: 60px;
+    border: 3px solid white;
+}
+
+.promotext4{
+    color: lightcyan;
+    top: 620px;
+    left: 320px;
+    border: 3px solid white;
+}
+
+.promotext1:hover,
+.promotext2:hover,
+.promotext3:hover,
+.promotext4:hover{
+    transform: scale(1.05);
+    background-color: rgba(255,255,255,0.2);
+}
+
+ .services{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.services div{
+    background: #111;
+    padding: 15px;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.services div:hover{
+    transform: translateY(-10px);
+    box-shadow:
+    0 0 10px #ff00ff,
+    0 0 20px #ff00ff,
+    0 0 40px #ff00ff;
+}
+
+.services h4{
+    color: white;
+    margin-top: 10px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.service1,
+.service2,
+.service3,
+.service4,
+.service5,
+.service6,
+.service7,
+.service8{
+    width: 250px;
+    height: 300px;
+    border-radius: 15px;
+    transition: 0.4s;
+}
+
+.services div:hover img{
+    transform: scale(1.05);
+}
+.promohead{
+    text-align: center;
+}
+
+.promohead h1{
+    display: inline-block;
+    padding: 20px;
+    color: #ff3131;
+    border-bottom: 3px solid #ff3131;
+    text-shadow:
+    0 0 10px #ff3131,
+    0 0 20px #ff3131;
+}
+
+.promotion{
+    margin: 0;.promohead h1{
+    text-align: center;
+    padding: 20px;
+    color: #ff00ff;
+    text-shadow:
+    0 0 10px #ff00ff,
+    0 0 20px #ff00ff;
+}
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.promotion div{
+    width: 250px;
+    background: #111;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.4s;
+    box-shadow: 0 0 10px rgba(255,0,255,0.5);
+}
+
+.promotion div:hover{
+    transform: translateY(-10px);
+    box-shadow:
+    0 0 10px #ff00ff,
+    0 0 20px #ff00ff,
+    0 0 40px #ff00ff;
+}
+
+.promotion h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+    color: #ff00ff;
+}
+
+.promotion h4{
+    margin-top: 15px;
+    font-size: 20px;
+}
+.promotion img{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+}
+
+
+.Appointment h1{
+     display: inline-block;
+     padding: 30px;
+     color: #ff3131;
+    /* border-bottom: 3px solid #ff3131;  */
+    text-shadow:
+    0 0 10px #ff3131,
+    0 0 20px #ff3131;
+}
+
+.Appointment{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.appointmentpage{
+    background: #111;
+    padding: 30px;
+    border-radius: 20px;
+    width: 350px;
+    box-shadow:
+    0 0 10px #00ffff,
+    0 0 20px #00ffff;
+}
+
+.appointmentpage h4{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.appointmentpage input,
+.appointmentpage select{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+.appointmentpage input:focus,
+.appointmentpage select:focus{
+    box-shadow:
+    0 0 10px #00ffff,
+    0 0 20px #00ffff;
+}.Appointment{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    /* border-bottom: 10px; */
+}
+
+.appointmentpage{
+    background: #111;
+    padding: 30px;
+    border-radius: 20px;
+    width: 350px;
+    box-shadow:
+    0 0 10px #00ffff,
+    0 0 20px #00ffff;
+}
+
+.appointmentpage h4{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.appointmentpage input,
+.appointmentpage select{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+.appointmentpage input:focus,
+.appointmentpage select:focus{
+    box-shadow:
+    0 0 10px #00ffff,
+    0 0 20px #00ffff;
+}
+
+
+
+/* pricing and discounts section */
+.main-price-section{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-top: 50px;
+}
+
+/* left box */
+.pricing-card{
+    position: relative;
+    width: 500px;
+    height: 650px;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    box-shadow:
+    0 0 10px #ff00ff,
+    0 0 20px #ff00ff,
+    0 0 40px #ff00ff;
+}
+
+/* IMAGE */
+.pricingpage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* OFFER CONTENT */
+.offer-content{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: rgba(0,0,0,0.5);
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* RIGHT BOX */
+.pricespage{
+    width: 350px;
+    background: black;
+    color: white;
+
+    padding: 30px;
+    border-radius: 20px;
+
+    box-shadow:
+    0 0 10px cyan,
+    0 0 20px cyan,
+    0 0 40px cyan;
+}
+
+/* PRICE TEXT */
+.prices h2{
+    border-bottom: 1px solid gray;
+    padding: 18px 0;
+}
+/* BOTH BOXES EFFECT */
+.pricing-card,
+.pricespage{
+    transition: 0.4s ease;
+    position: relative;
+}
+
+/* HOVER EFFECT */
+.pricing-card:hover,
+.pricespage:hover{
+
+    transform: translateY(-10px) scale(1.02);
+
+    box-shadow:
+    0 0 15px #ff00ff,
+    0 0 30px #ff00ff,
+    0 0 60px #ff00ff;
+}
+
+/* CYAN EFFECT FOR PRICE BOX */
+.pricespage:hover{
+    box-shadow:
+    0 0 15px cyan,
+    0 0 30px cyan,
+    0 0 60px cyan;
+}
+
+.pricing-card,
+.pricespage{
+    border-radius: 20px;
+
+    transition: 0.3s ease;
+
+    background: #111;
+
+    box-shadow:
+    0 0 5px rgba(255,0,150,0.3),
+    0 0 10px rgba(255,0,150,0.2);
+}
+
+/* SOFT NEON HOVER */
+.pricing-card:hover,
+.pricespage:hover{
+
+    transform: translateY(-5px);
+
+    box-shadow:
+    0 0 10px rgba(255,0,150,0.5),
+    0 0 20px rgba(255,0,150,0.4),
+    0 0 30px rgba(255,0,150,0.3);
+}
+.offer-content{
+
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+
+    background: rgba(0,0,0,0.45);
+
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    border: 2px solid rgba(255,255,255,0.4);
+
+    border-radius: 20px;
+
+    backdrop-filter: blur(3px);
+
+    padding: 20px;
+}
+.content-box{
+
+    display: inline-block;
+
+    background: rgba(255,255,255,0.15);
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    padding: 10px 20px;
+
+    margin: 8px;
+
+    border-radius: 30px;
+
+    font-size: 18px;
+
+    backdrop-filter: blur(3px);
+
+    transition: 0.3s;
+}
+
+/* SOFT HOVER EFFECT */
+.content-box:hover{
+
+    background: rgba(255,255,255,0.25);
+
+    transform: scale(1.05);
+}
+.content-box{
+    background: rgba(138, 43, 226, 0.3);
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    color: white;
+}
+.main-price-section h1{
+    display: inline-block;
+    padding: 20px;
+    color: #ff3131;
+    border-bottom: 3px solid #ff3131;
+    text-shadow:
+    0 0 10px #ff3131,
+    0 0 20px #ff3131;
+}
+
+
+
+.contactus{
+    width: 90%;
+    margin: 50px auto;
+    padding: 40px;
+    border: 2px solid #ff3131;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+.contact-left{
+    width: 40%;
+}
+
+.contactpage{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contactpage input,
+.contactpage textarea{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+
+/* neon effect */
+
+/* .contactus{
+    width: 90%;
+    margin: 50px auto;
+    padding: 40px;
+    border: 2px solid #ff3131;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    background: #111;
+
+    box-shadow:
+        0 0 10px #ff3131,
+        0 0 20px #ff3131,
+        0 0 40px rgba(255,49,49,0.5);
+
+    transition: 0.4s ease;
+}
+
+.contactus:hover{
+    transform: translateY(-8px);
+    box-shadow:
+        0 0 15px #ff3131,
+        0 0 30px #ff3131,
+        0 0 60px rgba(255,49,49,0.8);
+} */
+
+/* animated border glow */
+
+/* .contactus{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.contactus::before{
+    content: "";
+    position: absolute;
+    inset: -2px;
+    background: linear-gradient(
+        45deg,
+        #ff3131,
+        #ff7b00,
+        #ff3131
+    );
+    z-index: -1;
+    background-size: 300% 300%;
+    animation: glow 4s linear infinite;
+}
+
+@keyframes glow{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+} */
+
+/* floating icon */
+
+/* .social span{
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.social span:hover{
+    transform: translateY(-8px) scale(1.1);
+    box-shadow: 0 0 15px #ff3131;
+} */
+
+.contactus{
+    width: 90%;
+    margin: 50px auto;
+    padding: 40px;
+    border: 2px solid #ff3131;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: #111;
+
+    transition: 0.4s ease;
+}
+
+.contactus:hover{
+    transform: translateY(-8px);
+    box-shadow:
+        0 0 15px #ff3131,
+        0 0 30px #ff3131,
+        0 0 60px rgba(255,49,49,0.8);
+}
+.contact-left{
+    color: white;
+}
+
+
+/* for circle  */
+
+.social span{
+    display: inline-flex;
+
+    width: 50px;
+    height: 50px;
+
+    border: 2px solid #ff3131;
+    border-radius: 50%;
+
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+}
+
+.contactus h1{
+    display: inline-block;
+    padding: 20px;
+    color: #ff3131;
+    /* border-bottom: 3px solid #ff3131; */
+    text-shadow:
+    0 0 10px #ff3131,
+    0 0 20px #ff3131;
+    gap: 10px;
+}
+
+/* .aboutlogo{
+    margin: 0;
+    padding: 0;
+    width: 150px;
+    height: auto;
+}
+.about{
+    margin: 0;
+    padding: 0;
+}
+.aboutpage{
+    display: flex;
+    flex-wrap: wrap;
+}
+.quickline{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center; 
+    
+} */
+
+.about{
+    width: 90%;
+    margin: 50px auto;
+    padding: 30px 50px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+
+    background: #111;
+    color: white;
+
+    border: 2px solid #ff3131;
+    border-radius: 20px;
+
+    box-shadow: 0 0 15px rgba(255,49,49,0.5);
+}
+
+.aboutlogo{
+    width: 150px;
+    height: auto;
+}
+
+.aboutpage,
+.quickline{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.aboutpage h2,
+.quickline h2{
+    color: #ff3131;
+    margin-bottom: 15px;
+}
+
+.aboutpage p,
+.quickline p{
+    margin: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.aboutpage p:hover,
+.quickline p:hover{
+    color: #ff3131;
+    transform: translateX(5px);
+}
+
+
+/* .endpage{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.end{
+    text-align: left;
+} */
+
+
+/* endpage */
+
+.endpage{
+    margin: 0;
+    padding: 20px 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #111;
+    color: white;
+
+    border-top: 2px solid #ff3131;
+}
+
+.end{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+
+.socialpage{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.socialpage p{
+    width: 40px;
+    height: 40px;
+
+    border: 2px solid #ff3131;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.socialpage p:hover{
+    background: #ff3131;
+    color: white;
+    transform: translateY(-3px);
+}
